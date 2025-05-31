@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "todo_api"
+version = "0.1.0"
+description = "Backend for Todo application"
+readme = "README.md"
+authors = [{ name = "Damanpreet Singh Walia", email = "damanpreet3582@gmail.com" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.12,<3.14"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 5.2",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+]
+dependencies = [
+    "asgiref==3.8.1",
+    "Django==5.2.1",
+    "django-filter==25.1",
+    "djangorestframework==3.16.0",
+    "sqlparse==0.5.3",
+    "tzdata==2025.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
